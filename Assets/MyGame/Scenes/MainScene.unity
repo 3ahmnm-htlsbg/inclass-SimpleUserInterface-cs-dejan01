@@ -201,7 +201,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 131892096}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 417573217}
+        m_MethodName: CopyText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &131892096
@@ -452,7 +463,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a3763c6e9da44c8aab8c63d3fef2a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InputField_name: {fileID: 1899862800}
+  Button_name: {fileID: 131892095}
   Name_result: {fileID: 1720317267}
+  Number_varA: {fileID: 972902075}
+  counter: 0
 --- !u!4 &417573218
 Transform:
   m_ObjectHideFlags: 0
@@ -480,7 +495,7 @@ GameObject:
   - component: {fileID: 606206705}
   - component: {fileID: 606206704}
   m_Layer: 0
-  m_Name: ButtonNumber
+  m_Name: counter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -548,7 +563,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 606206705}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 417573217}
+        m_MethodName: CountUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &606206705
@@ -683,7 +709,7 @@ GameObject:
   - component: {fileID: 972902076}
   - component: {fileID: 972902075}
   m_Layer: 0
-  m_Name: Number_varB
+  m_Name: Number_varA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

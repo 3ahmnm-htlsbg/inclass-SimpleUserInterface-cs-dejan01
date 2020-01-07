@@ -5,22 +5,21 @@ using UnityEngine.UI;
 
 public class SimpleUserInterface : MonoBehaviour
 {
-    public Text Name_result;
-    public Text Number_varB;
-    public Button Button_name;
-    public Button ButtonNumber;
     public InputField InputField_name;
-    
+    public Button Button_name;
+    public Text Name_result;
 
-    // Start is called before the first frame update
-    void Start()
+    public Text Number_varA;
+    public int counter;
+
+    public void CopyText()
     {
-        
+        Name_result.text = InputField_name.text;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void CountUp(){
+        counter++;
+        Number_varA.text = counter.ToString();
     }
+
 }
